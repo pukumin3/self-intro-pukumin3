@@ -1,63 +1,111 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>自己紹介</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="header">
-      <div class="header-logo">自己紹介</div>
-      <div class="header-list">
-        <ul>
-          <li>Job</li>
-          <li>Favorit</li>
-          <li>Family</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="main">
-      <div class="copy-container">
-        <h1>Hello New world<span>.</span></h1>
-        <h2>頭から煙が出そう</h2>
-      </div>
-      
-      <div class="contents">
-        <h3 class="section-title">自己紹介</h3>
-        <div class="contents-item">
-          <img src="image/IMG_student.jpg" width="600px">
-          <p>Job 製薬会社勤務</p>
-        </div>
-        <div class="contents-item">
-          <img src="image/IMG_tasmanian.jpg" width="600px">
-          <p>Favorit　のんびりした動物</p>
-        </div>
-        <div class="contents-item">
-          <img src="image/IMG_beach.jpg" width="600px">
-          <p>Family　黒幕と若君の三人家族</p>
-        </div>
-      
-      </div>
-      
-      <div class="contact-form">
-        <h3 class="section-title">お問い合わせ</h3>
-        <p>メールアドレス（必須）</p>
-        <!-- <input>要素を追加してください -->
-        <input>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>自己紹介</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h2 class="text-white pt-1">Introducing</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="narbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Occupation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Interests</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Family</a>
+          </li>
         
-        <p>お問い合わせ内容（必須）</p>
-        <!-- <textarea>要素を追加してください -->
-      
-        <textarea></textarea>
-        
-        <p>※必須項目は必ずご入力ください</p>
-        <!-- <input>要素を追加してください -->
-        <input class="contact-submit" input type="submit" value="送信">
+          <button class="btn btn-primary ms-1">Join Us</button>
         
       </div>
     </div>
+  </nav>
+<div class="hero vh-100 d-flex align-items-center" id="home">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-7 mx-auto text-center">
+      <h1 class="display-4 text-white">Meet pikumin</h1>
+      <p class="text-white my-3">プログラミング初心者　毎日頭から煙が出そう　為せば成るはず</p>
+      <a href="#" class="btn btn-primary me-2">Until now</a>
+      <a href="#" class="btn btn-outline-light">Goals</a>
+    </div>
+  </div>
+</div>
+</div>
 
 
-  </body>
+<section id="services">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-8 mx-auto text-center">
+    <h6 class="text-primary">Discover</h6>
+    <h1>Skills and Stories</h1>
+   
+  </div>  
+  </div>
+  </div>
+ <div class="row g-4">
+    <div class="col-lg-4 col-sm-6">
+      <div class="services card-effect">
+        <div class="iconbox">
+          <i class='bx bx-task'></i>
+        </div>
+        <h5 class="mt-4 mb-2 text-white">Occupation</h5>
+        <p class="text-white">製薬会社で生産調整業務に従事しています　　社内でDX推進リーダーに任命され内製化の必要性を日々感じています</p>
+      </div>
+    </div>
+
+<div class="col-lg-4 col-sm-6">
+  <div class="services card-effect2">
+    <div class="iconbox">
+      <i class='bx bx-like'></i>
+    </div>
+    <h5 class="mt-4 mb-2 text-white">Interests</h5>
+    <p class="text-white">素潜り（無人島へ行ってみたい）　釣り　畑仕事　野球観戦　美味しい食べ物を作ったり、食べたり　のんびりした動物を眺める</p>
+  </div>
+</div>
+
+<div class="col-lg-4 col-sm-6">
+  <div class="services card-effect3">
+    <div class="iconbox">
+      <i class='bx bxs-home'></i>
+    </div>
+    <h5 class="mt-4 mb-2 text-white">Family</h5>
+    <p class="text-white">黒幕と若の３人家族　子供の受験が終わったら猫を家族に迎えたい  　猫のいる生活に憧れています</p>
+  </div>
+</div>
+</div>
+</section>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+</body>
 </html>
+
